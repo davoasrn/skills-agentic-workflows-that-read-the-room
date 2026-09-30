@@ -42,3 +42,11 @@ Refresh `site/content/github-info.md` with concise, practical GitHub guidance fo
 4. Select only useful, current updates that help developers learn GitHub faster. Keep the content concise and preserve the existing document structure unless a change is necessary.
 5. Cite the GitHub Blog, GitHub Changelog, or Awesome Copilot workflows source for every external update you add.
 6. Use the `create_pull_request` safe output to open a draft pull request for Mona to review. Include a short summary of the source-backed changes and do not modify any other file.
+
+## Fallback When Sources Are Unavailable
+
+If web-fetch is unavailable or any source can't be fetched, do not stop and do not finish with `noop`. Instead:
+
+1. Update `site/content/github-info.md` using `notes/mona-notes.md` and the current `site/content/github-info.md`.
+2. Add a short note to the pull request description listing which sources couldn't be fetched.
+3. Open the pull request with the `create_pull_request` safe output.
