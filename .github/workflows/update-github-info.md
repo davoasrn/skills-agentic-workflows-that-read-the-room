@@ -20,6 +20,7 @@ network:
   allowed:
     - github.blog
     - github.com
+    - awesome-copilot.github.com
 
 safe-outputs:
   create-pull-request:
@@ -37,6 +38,7 @@ Refresh `site/content/github-info.md` with concise, practical GitHub guidance fo
 
 1. Use GitHub repository API tools to read `notes/mona-notes.md` and the current `site/content/github-info.md`. Do not use terminal, CLI, or sandboxed commands for repository guidance or reference files.
 2. Fetch and review https://github.blog/latest/ and https://github.blog/changelog/ with web-fetch.
-3. Select only useful, current updates that help developers learn GitHub faster. Keep the content concise and preserve the existing document structure unless a change is necessary.
-4. Cite the GitHub Blog or GitHub Changelog source for every external update you add.
-5. Use the `create_pull_request` safe output to open a draft pull request for Mona to review. Include a short summary of the source-backed changes and do not modify any other file.
+3. Fetch and review the Awesome Copilot workflows page at https://awesome-copilot.github.com/workflows/ with web-fetch.
+4. Select only useful, current updates that help developers learn GitHub faster. Keep the content concise and preserve the existing document structure unless a change is necessary.
+5. Cite the GitHub Blog, GitHub Changelog, or Awesome Copilot workflows source for every external update you add.
+6. Use the `create_pull_request` safe output to open a draft pull request for Mona to review. Include a short summary of the source-backed changes and do not modify any other file.
