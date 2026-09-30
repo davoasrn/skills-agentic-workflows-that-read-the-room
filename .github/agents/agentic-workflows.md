@@ -232,4 +232,3 @@ gh aw compile --validate
 - **Triggering runs**: Always use `gh aw run <workflow-name>` to trigger a workflow on demand — not `gh workflow run <file>.lock.yml`. `gh aw run` handles workflow resolution by short name, input parsing and validation, and correct run-tracking for agentic workflows. Use `--ref <branch>` to run on a specific branch.
 - **CLI commands reference**: For a complete guide on all `gh aw` commands and their MCP tool equivalents (for restricted environments), see `https://raw.githubusercontent.com/github/gh-aw/main/.github/aw/cli-commands.md`
 - **Do not compile manually**: When creating or editing agentic workflow files, do not compile them. Only create or update the markdown workflow file.
-- **Validation**: Always validate your workflow files using `gh aw compile --validate` to ensure they meet the required syntax and structure before attempting to run them.
